@@ -1,4 +1,4 @@
-//Home controller
+// Home controller
 
 var Home = {
     index: function(req, res) {
