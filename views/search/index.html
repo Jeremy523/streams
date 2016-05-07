@@ -1,8 +1,29 @@
 {% extends "layouts/base.html" %}
 
 {% block content %}
-    <div class="page-header">
+    <div class="jumbotron">
         <h1>Search</h1>
-        <p class = "lead">Type in a hashtag to begin your search!</p>
+        <p class="lead">Search for a hashtag!</p>
+        <form class="form-inline">
+            <div class="form-group">
+                <label class="sr-only" for="hashtag">Hashtag</label>
+                <input type="text" class="form-control" id="hashtag" placeholder="#nyc, #decision2016">
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+        <br />
+        
+        <blockquote>
+          <p>"10/10, I love Streams!"</p>
+          <small>Everyone <!--<cite title="Source Title">Source Title</cite>--></small>
+        </blockquote>
+        
+        <h4>Search Results</h4>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                Basic Panel
+            </div>
+        </div>
+        
     </div>
 {% endblock %}

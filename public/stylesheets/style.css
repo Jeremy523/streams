@@ -1,9 +1,22 @@
-body 
-{
-  padding: 50px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@media screen and (min-width: 720px) {
+    body 
+    {
+      padding: 50px;
+      font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    body 
+    {
+      padding-left: 10px;
+      padding-right: 10px;
+      font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
 }
 
 a 
@@ -14,4 +27,9 @@ a
 p
 {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;;
+}
+
+.jumbotron
+{
+  padding:30px;
 }
