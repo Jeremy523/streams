@@ -2,14 +2,20 @@
 var controllers = require('./controllers');
 
 var Router = {
+
     init: function(app) {
-        //Home page
+
+        // Home page
         app.get('/', controllers.Home.index);
-        //About page
+
+        // About page
         app.get('/about', controllers.About.index);
-        //Users
+
+        // Users
         app.get('/users', controllers.Users.index);
+
     }
+
 };
 
 module.exports = Router;
